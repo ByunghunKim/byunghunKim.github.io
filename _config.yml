@@ -118,8 +118,8 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://ioioi.dev"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+    #- label: "Twitter"
+      #icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
@@ -134,11 +134,11 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
+    #- label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+    #- label: "Facebook"
+      #icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
