@@ -28,9 +28,10 @@ DB와의 연결방법을 미리 만들어두었다가, 사용자의 요청이 �
 웹프로그램을 개발할 때 connection pool 을 설정할 필요가 있는데
 아래와 같은 에러가 발생할 때 다음의 사항을 참고해보세요.
 
-
+```log
 > java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'  
 > at org.apache.tomcat.dbcp...
+```
 
 JDBC 환경설정 확인
 
@@ -40,8 +41,8 @@ JDBC 환경설정 확인
   버전에 맞는 jar 파일을 webContent/WEB-INF/lib 폴더에 추가시켜 줍니다.
   
 2. PC에 설치해둔 tomcat경로/conf/context.xml 파일에 다음의 설정을 추가합니다.
-  - <context></context> 태그 내부에
-  ```
+  - '<context></context>' 태그 내부에
+  ```log
 	<Resource 
 	  name="jdbc/dbname" #(데이타베이스이름 , JNDI로 호출될 이름을 설정) 
 	  auth="Container" #(Container 거나 Application이거나 - DBCP를 관리할 관리자) 
@@ -59,8 +60,8 @@ JDBC 환경설정 확인
   ```
 
 3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.
-  - <web-app></web-app> 태그 내부에
-  ```
+  - '<web-app></web-app>' 태그 내부에
+  ```html
 	<resource-ref>
 	  <description>My SQL Resource</description><!-- 리소스 설명 -->
 	  <res-ref-name>jdbc/basicjsp</res-ref-name><!-- 리소스 이름(JNDI명) -->
