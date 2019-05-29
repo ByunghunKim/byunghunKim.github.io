@@ -41,7 +41,7 @@ JDBC 환경설정 확인
   버전에 맞는 jar 파일을 webContent/WEB-INF/lib 폴더에 추가시켜 줍니다.
   
 2. PC에 설치해둔 tomcat경로/conf/context.xml 파일에 다음의 설정을 추가합니다.  
-  '<context></context>' 태그 내부에
+  > '<context></context>' 태그 내부에
   ```html
 	<Resource 
 	  name="jdbc/dbname" #(데이타베이스이름 , JNDI로 호출될 이름을 설정) 
@@ -60,7 +60,7 @@ JDBC 환경설정 확인
   ```
 
 3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.  
-  '<web-app>' '</web-app>' 태그 내부에</code>
+  > '<web-app> </web-app>' 태그 내부에</code>
   ```html
 	<resource-ref>
 	  <description>My SQL Resource</description><!-- 리소스 설명 -->
