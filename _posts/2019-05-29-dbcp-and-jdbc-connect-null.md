@@ -40,7 +40,7 @@ JDBC 환경설정 확인
   - tomcat 6.0 이후 버전 : tomcat-dbcp.jar
   버전에 맞는 jar 파일을 webContent/WEB-INF/lib 폴더에 추가시켜 줍니다.
   
-2. PC에 설치해둔 tomcat경로/conf/context.xml 파일에 다음의 설정을 추가합니다.
+2. PC에 설치해둔 tomcat경로/conf/context.xml 파일에 다음의 설정을 추가합니다.  
   '<context></context>' 태그 내부에
   ```html
 	<Resource 
@@ -59,7 +59,7 @@ JDBC 환경설정 확인
 	  removeAbandonedTimeout="60"/> 
   ```
 
-3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.
+3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.  
   '<web-app>' '</web-app>' 태그 내부에</code>
   ```html
 	<resource-ref>
