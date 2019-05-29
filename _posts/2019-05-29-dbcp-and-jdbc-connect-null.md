@@ -73,7 +73,7 @@ JDBC 환경설정 확인
 
 좀 더 많은 DBCP 참조.  
 [네이버 Commons DBCP 이해하기](https://d2.naver.com/helloworld/5102792){: target="_blank"}
-
+[네이버로 가자](https://www.naver.com/){: target="_blank"}
 
 
 
