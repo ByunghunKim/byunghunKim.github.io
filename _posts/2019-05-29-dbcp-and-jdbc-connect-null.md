@@ -58,23 +58,6 @@ JDBC 환경설정 확인
 	  removeAbandoned="true" 
 	  removeAbandonedTimeout="60"/> 
   ```
-  
-  ```xml
-	<Resource 
-	  name="jdbc/dbname" #(데이타베이스이름 , JNDI로 호출될 이름을 설정) 
-	  auth="Container" #(Container 거나 Application이거나 - DBCP를 관리할 관리자) 
-	  type="javax.sql.DataSource" #(해당 resource의 return type) 
-	  factory="org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory" #(dbcp를 유용하는 관리 클래스) 
-	  driverClassName="com.mysql.jdbc.Driver" #(dbcp를 이용하기 위한 드라이버클래스) 
-	  url="jdbc:mysql://localhost:3306/basicjsp" #(db 접속 url) 
-	  username="test" #(db 접속 id) 
-	  password="test" #(db 접속 password) 
-	  maxActive="100"  
-	  maxIdle="30" 
-	  maxWait="10000" 
-	  removeAbandoned="true" 
-	  removeAbandonedTimeout="60"/> 
-  ```
 
 3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.
   - '<web-app></web-app>' 태그 내부에
@@ -89,7 +72,7 @@ JDBC 환경설정 확인
 
 
 좀 더 많은 DBCP 참조.  
-[네이버 Commons DBCP 이해하기](https://d2.naver.com/helloworld/5102792 "네이버 Commons DBCP 이해하기"){: target="_blank"}
+[네이버 Commons DBCP 이해하기](https://d2.naver.com/helloworld/5102792){: target="_blank"}
 
 
 
