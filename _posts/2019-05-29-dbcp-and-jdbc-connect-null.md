@@ -29,7 +29,7 @@ DB와의 연결방법을 미리 만들어두었다가, 사용자의 요청이 �
 아래와 같은 에러가 발생할 때 다음의 사항을 참고해보세요.
 
 
-> java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null'
+> java.sql.SQLException: Cannot create JDBC driver of class '' for connect URL 'null' 
 > at org.apache.tomcat.dbcp...
 
 JDBC 환경설정 확인
