@@ -60,12 +60,12 @@ JDBC 환경설정 확인
 3. WEB-INF/web.xml 설정에 다음의 설정을 추가합니다.
   - <web-app></web-app> 태그 내부에
   ```
-    <resource-ref>
-	<description>My SQL Resource</description><!-- 리소스 설명 -->
-	<res-ref-name>jdbc/basicjsp</res-ref-name><!-- 리소스 이름(JNDI명) -->
-	<res-type>javax.sql.DataSource</res-type><!-- 리턴 Type -->
-	<res-auth>Container</res-auth><!-- 관리 계층 -->
-    </resource-ref>
+	<resource-ref>
+	  <description>My SQL Resource</description><!-- 리소스 설명 -->
+	  <res-ref-name>jdbc/basicjsp</res-ref-name><!-- 리소스 이름(JNDI명) -->
+	  <res-type>javax.sql.DataSource</res-type><!-- 리턴 Type -->
+	  <res-auth>Container</res-auth><!-- 관리 계층 -->
+	</resource-ref>
   ```
 
 
